@@ -5,10 +5,10 @@ int main() {
     time_log::TimeLogger huge_logger("funny.csv");
     huge_logger.reset_start();
 
-    std::vector<std::string> chars_files = data::make_paths("chars", data::folder); // делает файлы
-    std::vector<std::string> ints_files = data::make_paths("ints", data::folder);
-    std::vector<std::string> doubles_files = data::make_paths("doubles", data::folder);
-    std::vector<std::string> str_files = data::make_paths("strings", data::folder);
+    std::vector<std::string> chars_files = data::make_paths("chars", data::directory); // делает файлы
+    std::vector<std::string> ints_files = data::make_paths("ints", data::directory);
+    std::vector<std::string> doubles_files = data::make_paths("doubles", data::directory);
+    std::vector<std::string> str_files = data::make_paths("strings", data::directory);
 
     time_log::TimeLogger exp_logger(data::out_file); // конструирует логгер
     experiments::exp_with_chars(chars_files, exp_logger); // осуществляет эксперименты

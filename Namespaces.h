@@ -10,11 +10,12 @@
 #include <algorithm>
 
 namespace data {
+    ///< There is a directory with init data files.
     const std::string
-            folder = "C:\\Users\\selya\\programming\\PycharmProjects\\File_Generator+Graph_Maker\\";
+            directory = "";
     const std::string out_file = "exp_time.csv";
 
-    std::vector<std::string> make_paths(const std::string& part, const std::string& fold = folder);
+    std::vector<std::string> make_paths(const std::string& part, const std::string& fold = directory);
     // склеивает имена файлов
 
     std::vector<char> load_vector_char(const std::string& path_file);
