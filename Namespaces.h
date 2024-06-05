@@ -12,7 +12,7 @@
 namespace data {
     ///< There is a directory with init data files.
     const std::string
-            directory = "";
+            directory = "my_dir";
     const std::string out_file = "exp_time.csv";
 
     std::vector<std::string> make_paths(const std::string& part, const std::string& fold = directory);
